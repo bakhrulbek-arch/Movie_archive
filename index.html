@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie arch</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск" id="search">
+            </form>
+        </div>
+        <div class="header__logo">
+            <img src="icons/rolo.svg" alt="rolo">
+            <img src="icons/Logotype.svg" alt="logo">
+        </div>
+    </header>
+    <main class="promo">
+        <div class="promo__menu">
+            <nav class="promo__menu-list">
+                <ul class="genres"></ul>
+            </nav>
+        </div>
+        <div class="promo__content">
+            <div class="promo__bg">
+                <div class="promo__genre">КОМЕДИЯ</div>
+                <div class="promo__title">МАРСИАНИН</div>
+                <div class="promo__descr">ИСТОРИЯ ЧЕЛОВЕКА, ВЫЖИВШЕГО НА ЧУЖОЙ ПЛАНЕТЕ В ОДИНОЧКУ</div>
+                <div class="promo__ratings">
+                    <span class="imdb">IMDb: 8.0</span>
+                    <span class="reserch">Кинопоиск: 7.7</span>
+                </div>
+            </div>
+            <div class="promo__interactive">
+                <div>
+                    <div class="promo__interactive-title">ПРОСМОТРЕННЫЕ ФИЛЬМЫ</div>
+                    <ul class="promo__interactive-list"></ul>
+                </div>
+                <div>
+                    <form class="add">
+                        <div class="promo__interactive-title">ДОБАВИТЬ НОВЫЙ ФИЛЬМ</div>
+                        <span>Введите название фильма</span>
+                        <input class="adding__input" type="text" placeholder="Что уже посмотрено...?">
+                        <span>Сделать его любимым?</span>
+                        <input type="checkbox">
+                        <span class="yes">Да!</span>
+                        <button>Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="promo__adv">
+            <div class="promo__adv-title">Реклама от спонсоров</div>
+            <img class="set_reklam" src="img/content_1.png" alt="some picture">
+            <img class="set_reklam" src="img/content_2.jpg" alt="some picture">
+            <img class="set_reklam" src="img/content_3.jpg" alt="some picture">
+            <img class="set_reklam" src="img/content_4.png" alt="some picture">
+            <img class="set_reklam" src="img/content_5.png" alt="some picture">
+        </div>
+    </main>
+
+    <div class="modal_bg"></div>
+    <div class="modal">
+        <img src="" alt="">
+        <div class="right">
+            <h1>Title</h1>
+            <h2>Year</h2>
+            <h3>Genre</h3>
+            <p>description</p>
+
+            <span class="set_rating_img">
+                <img class="img_star" alt="star">
+                <button class="bu">close</button>
+            </span>
+            <!-- <div data-ajax="true" class="rating_set rating_conf"> -->
+            <div class="rating_set rating_conf">
+                <div class="rating_body">
+                    <div class="rating_active"></div>
+                    <div class="rating_items">
+                        <input type="radio" class="rating_item" value="2" name="rating_set">
+                        <input type="radio" class="rating_item" value="4" name="rating_set">
+                        <input type="radio" class="rating_item" value="6" name="rating_set">
+                        <input type="radio" class="rating_item" value="8" name="rating_set">
+                        <input type="radio" class="rating_item" value="10" name="rating_set">
+                        <span class="rating"></span>
+                    </div>
+                </div>
+            </div>
+            <p id="star_text">Насколько ты оценишь ФИЛЬМ</p>
+            <div class="load">
+                <img class="rating_img" src="./icons/load.svg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
